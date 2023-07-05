@@ -13,4 +13,17 @@ Build out an HTML page that has the following components:
 ## Part 2
 Build a Nodejs application that serves the client HTML upon request.
 - Use npm to install "express"
-- Setup a basic server to give the HTML client to the user upon request 
+- Setup a basic server to give the HTML client to the user upon request
+
+## Part 3
+This is going to be a more in-depth endeavor. You will be creating a service on the server that does the following:
+- Setup a sql-lite database with [this node module][0]
+- Create a startup script that is able to request the [csv file][1] from https://gist.github.com/lokesh234/a2ce22ac39f7e36df4305ac07967342d
+- Parse the contents of the file downloaded into something more manageable
+- Load the parsed data into the sql-lite database
+- Create an api that is able to return a list of characters based on "Saga_or_Movie"(this name is able to be changed to something more consumable)
+- Create an api that returns a single character and it's power level per "Saga_or_Movie" unless this is also specified in the request
+- Create an api that will return the outcome of a fight between the characters based on their "Power_Level" in a specified "Saga_or_Movie"
+
+[0]: https://www.npmjs.com/package/sqlite3
+[1]: https://en.wikipedia.org/wiki/Comma-separated_values
